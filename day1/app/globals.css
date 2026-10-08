@@ -1,0 +1,20 @@
+@layer utilities {
+  .sheet {
+    width: 100%;
+    max-width: 1600px;
+    margin-inline: auto;
+    background: var(--color-bg);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+  }
+
+  .ghost-hatch {
+    background-image: repeating-linear-gradient(
+      135deg,
+      var(--color-hairline) 0 1px,
+      transparent 1px 4px
+    );
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+}
